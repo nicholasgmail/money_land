@@ -1,0 +1,61 @@
+.section-car {
+   background: url("../img/bg-car.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto;
+   height: rem-calc(1454);
+   &__text {
+      top: 3.4rem;
+      left: 1%;
+   }
+   &__btn {
+      left: 16%;
+      bottom: 220px;
+      transform: translate(50%, 50%);
+   }
+   &__arrow {
+      left: 54%;
+      bottom: 284px;
+      transform: translate(50%, 50%);
+      p {
+         transform: matrix(0.989, -0.142, 0.142, 0.989, 0, 0);
+      }
+   }
+}
+
+@include media-breakpoint-up(md) {
+   .section-car {
+      &__text {
+         top: 9.4rem;
+         left: 1%;
+         p {
+            font-size: 1.8rem;
+         }
+      }
+   }
+}
+
+@media (max-width: 767.98px) {
+   .section-car {
+      &__btn {
+         left: -50%;
+         bottom: 60px;
+         transform: none;
+         transform: translate(50%, 50%);
+      }
+      &__arrow {
+         left: 60%;
+         bottom: 104px;
+      }
+      .img_rotate_45 {
+         transform: rotate(45deg);
+      }
+   }
+}
+
+@include media-breakpoint-down(sm) {
+   .section-car {
+      background-size: cover;
+      height: 35.875rem;
+   }
+}

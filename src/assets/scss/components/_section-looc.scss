@@ -1,0 +1,18 @@
+@import "~hover.css/scss/effects/2d-transitions/hang";
+
+.section-looc {
+   &__h4 {
+      &:hover{
+         cursor: pointer;
+      }
+      &.section-looc__h4_after_hang {
+         @include hang();
+      }
+      &::after {
+         content: url("../img/arrow-to-down.png");
+         position: absolute;
+         top: 17%;
+         left: 100%;
+      }
+   }
+}

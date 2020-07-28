@@ -1,0 +1,9 @@
+.top-header {
+   &__link {
+      color: $white;
+      &:hover {
+         color: $yellow;
+      }
+   }
+}
+

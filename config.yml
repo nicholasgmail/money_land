@@ -24,6 +24,7 @@ PATHS:
   #каталог стилей
   styles:
     - './src/assets/scss/**/*.scss'
+    - './src/assets/scss/fonts.css'
 
   #каталог картинок
   img:

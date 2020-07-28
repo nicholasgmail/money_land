@@ -1,6 +1,13 @@
-
-
-function f() {
-    return console.log('hello')
-}
-f;
+$(document).ready(function () {
+  $(".section-looc__scrollto").click(function () {
+    var elementClick = $(this).attr("href");
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate(
+      {
+        scrollTop: destination,
+      },
+      1000
+    );
+    return false;
+  });
+});

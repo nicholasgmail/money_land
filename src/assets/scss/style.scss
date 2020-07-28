@@ -17,6 +17,12 @@
 @import "mixin/_mixin";
 @import "global";
 
-
 @import "functions/_functions";
 @import "mixin/_mixin";
+
+@import "components/body/body";
+@import "components/menu/header";
+@import "components/section-looc";
+@import "components/section-map";
+@import "components/section-really-want";
+@import "components/section-car";

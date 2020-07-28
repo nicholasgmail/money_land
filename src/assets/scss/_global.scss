@@ -1,0 +1,102 @@
+.text-purple {
+   color: $purple;
+}
+.text-pinc {
+   color: $pink;
+}
+.text-orange {
+   color: $orange;
+}
+.text-yellow {
+   color: $yellow2;
+}
+
+.section-width {
+}
+.line-height_1 {
+   line-height: 1;
+}
+.font-size_18_arial {
+   font-family: $font-family-arial;
+   font-size: rem-calc(18px);
+}
+.font-size_24_arial {
+   font-family: $font-family-arial;
+   font-size: rem-calc(24px);
+}
+.font-size_30_arial {
+   font-family: $font-family-arial;
+   font-size: rem-calc(30px);
+   line-height: 1.2;
+}
+.font-size_36_arial {
+   font-family: $font-family-arial;
+   font-size: rem-calc(36px);
+   line-height: 1.2;
+}
+.font-size_40_arial {
+   font-family: $font-family-arial;
+   font-size: rem-calc(40px);
+}
+.font_size_42 {
+   font-size: rem-calc(42px);
+   line-height: rem-calc(26px);
+}
+
+.font_family_regular {
+   font-family: $font-family-regular;
+}
+.font_family_regular_24 {
+   font-family: $font-family-regular;
+   font-size: rem-calc(24px);
+   line-height: 1.4;
+}
+.font_family_regular_36 {
+   font-family: $font-family-regular;
+   font-size: rem-calc(36.21px);
+   line-height: 1.2;
+}
+
+.font_size_47 {
+   font-size: rem-calc(47px);
+   line-height: 1.2;
+}
+.font_size_48 {
+   font-size: rem-calc(48px);
+   line-height: 1.2;
+}
+.font_size_60 {
+   font-size: rem-calc(60px);
+   line-height: 1.2;
+}
+
+.font_size_64 {
+   font-size: rem-calc(64px);
+   line-height: 1.2;
+}
+@include media-breakpoint-down(sm) {
+   .font-size_40_arial {
+      font-family: $font-family-arial;
+      font-size: rem-calc(20px);
+   }
+   .font_size_42 {
+      font-size: rem-calc(40px);
+      line-height: rem-calc(40px);
+   }
+   .font-size_30_arial {
+      font-size: 1.2rem;
+   }
+   .font-size_36_arial {
+      font-size: rem-calc(15px);
+   }
+   .font_size_64 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+   }
+   .w-sm-60 {
+      width: 60%;
+   }
+   .font_family_regular_24 {
+      font-size: rem-calc(14px);
+   }
+}

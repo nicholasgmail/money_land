@@ -1,0 +1,194 @@
+
+.section-map {
+   background: url(../img/map.png);
+   background-position: top;
+   background-size: contain;
+   background-repeat: no-repeat;
+   &.section-map_height {
+      height: rem-calc(1216px);
+      margin-top: rem-calc(181px);
+   }
+   &__point {
+      left: 15%;
+      bottom: 100%;
+   }
+   &__knowledge-experience {
+      left: 43%;
+      top: calc(9px + 0.5vw);
+      p {
+         transform: matrix(0.99, -0.034, 0.034, 0.999, 0, 0);
+      }
+   }
+   &__money-thinkingt {
+      transform: matrix(0.99, 0.09, -0.09, 0.99, 0, 0);
+      left: 62%;
+      top: 17rem;
+   }
+   &__fear-failure {
+      left: 34%;
+      top: rem-calc(281px);
+      p {
+         color: rgba($color: #b41f46, $alpha: 1);
+         transform: matrix(0.996, 0.079, -0.079, 0.996, 0, 0);
+      }
+   }
+   &__confidence {
+      transform: matrix(0.99, -0.045, 0.045, 0.99, 0, 0);
+      left: 15%;
+      top: 34.2rem;
+   }
+   &__money {
+      left: 48%;
+      top: rem-calc(570px);
+
+      p {
+         color: rgba($color: #d0532a, $alpha: 1);
+         transform: matrix(0.998, -0.059, 0.059, 0.998, 0, 0);
+      }
+   }
+   &__money-start {
+      transform: matrix(0.99, 0.045, -0.045, 0.998, 0, 0);
+      left: 56%;
+      top: 52.5rem;
+   }
+   &__money-active {
+      left: 26%;
+      top: rem-calc(897px);
+
+      p {
+         color: rgba($color: #d99c14, $alpha: 1);
+         transform: matrix(0.983, -0.181, 0.181, 0.983, 0, 0);
+      }
+   }
+}
+
+@include media-breakpoint-down(xs) {
+   .section-map {
+      background-size: 88%;
+      &__point {
+         left: calc(0 + 0.5vw);
+         bottom: 100%;
+      }
+      &__knowledge-experience {
+         left: 32%;
+         top: -2%;
+      }
+      &__money-thinkingt {
+         transform: matrix(0.99, 0.09, -0.09, 0.99, 0, 0);
+         left: 62%;
+         top: 18%;
+      }
+      &__fear-failure {
+         left: 23%;
+         top: 16%;
+      }
+      &__confidence {
+         transform: matrix(0.99, -0.045, 0.045, 0.99, 0, 0);
+         left: 1%;
+         top: 36%;
+      }
+      &__money {
+         left: 48%;
+         top: 35%;
+      }
+      &__money-start {
+         left: 56%;
+         top: 55%;
+      }
+      &__money-active {
+         left: -1%;
+         top: 55%;
+      }
+   }
+}
+@media (min-width: 370px) and (max-width: 400px) {
+   .section-map {
+      background-size: 88%;
+      &.section-map_height {
+         height: 39.5rem;
+      }
+   }
+}
+/* 
+@media (max-width: 360px) {
+   .section-map {
+      background-size: 88%;
+       &.section-map_height {
+      height: 39.5rem;
+      }
+      &__point {
+         left: 0%;
+      }
+      &__knowledge-experience {
+         left: 32%;
+         top: -12px;
+      }
+      &__money-thinkingt {
+         transform: matrix(0.99, 0.09, -0.09, 0.99, 0, 0);
+         left: 60%;
+         top: 7rem;
+      }
+      &__fear-failure {
+         left: 23%;
+         top: 6.563rem;
+      }
+      &__confidence {
+         transform: matrix(0.89, -0.099, 0.02, 0.89, -18, -9);
+         left: 1%;
+         top: 10.2rem;
+      }
+      &__money {
+         left: 48%;
+         top: 13.625rem;
+      }
+      &__money-active {
+         left: 2%;
+         top: 21.063rem;
+      }
+      &__money-start {
+         left: 57%;
+         top: 22rem;
+      }
+   }
+}
+@media (min-width: 370px) and (max-width: 400px) {
+   .section-map {
+      background-size: 88%;
+       &.section-map_height {
+      height: 39.5rem;
+      }
+      &__point {
+         left: 0%;
+      }
+      &__knowledge-experience {
+         left: 32%;
+         top: -12px;
+      }
+      &__money-thinkingt {
+         transform: matrix(0.99, 0.09, -0.09, 0.99, 0, 0);
+         left: 62%;
+         top: 8.5rem;
+      }
+      &__fear-failure {
+         left: 25%;
+         top: 8rem;
+      }
+      &__confidence {
+         transform: matrix(0.89, -0.099, 0.02, 0.89, -18, -9);
+         left: 2%;
+         top: 13.2rem;
+      }
+      &__money {
+         left: 38%;
+         top: 16.5rem;
+      }
+      &__money-active {
+         left: 2%;
+         top: 27.563rem;
+      }
+      &__money-start {
+         left: 62%;
+         top: 26.5rem;
+      }
+   }
+} */
