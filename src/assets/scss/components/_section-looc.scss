@@ -2,8 +2,10 @@
 
 .section-looc {
    &__h4 {
-      &:hover{
+      &:hover {
          cursor: pointer;
+         color: $pink;
+         text-decoration: none;
       }
       &.section-looc__h4_after_hang {
          @include hang();
@@ -13,6 +15,34 @@
          position: absolute;
          top: 17%;
          left: 100%;
+      }
+   }
+}
+@include media-breakpoint-down(sm) {
+   .section-looc {
+      &__h4 {
+         &:hover {
+            cursor: pointer;
+            color: $pink;
+            text-decoration: none;
+         }
+         &.section-looc__h4_after_hang {
+            @include hang();
+             &::after {
+            background: url(../img/arrow-to-down.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;        
+         }
+         }
+         &::after {
+            content: "";
+            position: absolute;
+            top: 17%;
+            left: 100%;
+            height: 50px;
+            width: 100%;            
+         }
       }
    }
 }

@@ -1,8 +1,7 @@
-
 .section-map {
    background: url(../img/map.png);
    background-position: top;
-   background-size: contain;
+   background-size: auto;
    background-repeat: no-repeat;
    &.section-map_height {
       height: rem-calc(1216px);
