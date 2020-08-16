@@ -24,7 +24,6 @@ export default function personMobile() {
     keyframes({
       values: $maps,
       duration: 20000,
-      loop: Infinity,
     }).start({
       update: (v) => {
         const $divHero = styler(create.$addHero);
@@ -57,7 +56,7 @@ export default function personMobile() {
           create.$articleNeedMakeMoney.remove();
           addBuyAsset();
         }
-        if (Math.round(v.x) == 39 && Math.round(v.y) == 296 && mq.inside(325, 420)) {
+        if (Math.round(v.x) == 62 && Math.round(v.y) == 306 && mq.inside(325, 420)) {
           create.$articleNeedMakeMoney.remove();
           addBuyAsset();
         }
@@ -69,7 +68,7 @@ export default function personMobile() {
           create.$articleAssetsMakeMoney.remove();
           addPassiveIncom();
         }
-        if (Math.round(v.x) == 192 && Math.round(v.y) == 431 && mq.inside(325, 420)) {
+        if (Math.round(v.x) == 126 && Math.round(v.y) == 447 && mq.inside(325, 420)) {
           create.$articleAssetsMakeMoney.remove();
           addPassiveIncom();
         }

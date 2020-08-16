@@ -27,6 +27,12 @@ export function addSectionKnowled() {
    }
    if(mq.min("medium")){
     const $seeOpportunitiesS = styler($seeOpportunitie);
+    const $seeOpportunitiesXY = value({ x: 278, y: 108 }, $seeOpportunitiesS.set);
+    $seeOpportunitie.style.display = "block";
+    $seeOpportunitiesXY.get();
+   }
+   if(mq.min("large")){
+    const $seeOpportunitiesS = styler($seeOpportunitie);
     const $seeOpportunitiesXY = value({ x: 378, y: 108 }, $seeOpportunitiesS.set);
     $seeOpportunitie.style.display = "block";
     $seeOpportunitiesXY.get();
@@ -57,6 +63,12 @@ export function addMakeDeals() {
   }
   if(mq.min("medium")){
   const $makeDealS = styler($makeDeal);
+  const $makeDealXY = value({ x:50, y: 380 }, $makeDealS.set);
+  $makeDeal.style.display = "block";
+  $makeDealXY.get();
+  }
+  if(mq.min("large")){
+  const $makeDealS = styler($makeDeal);
   const $makeDealXY = value({ x:145, y: 380 }, $makeDealS.set);
   $makeDeal.style.display = "block";
   $makeDealXY.get();
@@ -82,11 +94,17 @@ export function addBuyAsset() {
   }
   if(mq.inside(325, 420)){
     const $buyAssetS = styler($buyAsset);
-    const $buyAssetXY = value({ x: 172, y: 350 }, $buyAssetS.set);
+    const $buyAssetXY = value({ x: 171, y: 360 }, $buyAssetS.set);
     $buyAsset.style.display = "block";
     $buyAssetXY.get();
   }
   if(mq.min("medium")){
+    const $buyAssetS = styler($buyAsset);
+    const $buyAssetXY = value({ x: 382, y: 700 }, $buyAssetS.set);
+    $buyAsset.style.display = "block";
+    $buyAssetXY.get();
+  }
+  if(mq.min("large")){
     const $buyAssetS = styler($buyAsset);
     const $buyAssetXY = value({ x: 482, y: 700 }, $buyAssetS.set);
     $buyAsset.style.display = "block";
@@ -112,11 +130,17 @@ export function addPassiveIncom() {
   }
   if(mq.inside(325, 420)){
     const $passiveIncomS = styler($passiveIncom);
-  const $passiveIncomXY = value({ x: -15, y: 460 }, $passiveIncomS.set);
+  const $passiveIncomXY = value({ x: -15, y: 470 }, $passiveIncomS.set);
   $passiveIncom.style.display = "block";
   $passiveIncomXY.get();
   }
   if(mq.min("medium")){
+    const $passiveIncomS = styler($passiveIncom);
+  const $passiveIncomXY = value({ x: 0, y: 930 }, $passiveIncomS.set);
+  $passiveIncom.style.display = "block";
+  $passiveIncomXY.get();
+  }
+  if(mq.min("large")){
     const $passiveIncomS = styler($passiveIncom);
   const $passiveIncomXY = value({ x: 100, y: 930 }, $passiveIncomS.set);
   $passiveIncom.style.display = "block";

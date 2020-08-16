@@ -42,6 +42,11 @@ export function sectionKnowled() {
   $sectionKnowledXY.get();
   }
   if (mq.min("medium")){
+  const $sectionKnowledXY = value({ x:242, y: 105 }, $sectionKnowledS.set);
+   $knowledgeAndExperience.style.display = "block";
+  $sectionKnowledXY.get();
+  }
+  if (mq.min("large")){
   const $sectionKnowledXY = value({ x:342, y: 105 }, $sectionKnowledS.set);
    $knowledgeAndExperience.style.display = "block";
   $sectionKnowledXY.get();
@@ -69,6 +74,11 @@ export function articleBadLuck() {
   $articleBadLuckXY.get();
 }
 if (mq.min("medium")){
+  const $articleBadLuckXY = value({ x:158, y: 392 }, $articleBadLuckS.set);
+  $articleBadLuck.style.display = "block";
+  $articleBadLuckXY.get();
+}
+if (mq.min("large")){
   const $articleBadLuckXY = value({ x:258, y: 392 }, $articleBadLuckS.set);
   $articleBadLuck.style.display = "block";
   $articleBadLuckXY.get();
@@ -101,6 +111,14 @@ export function articleNeedMakeMoney() {
   $articleNeedMakeMoneyXY.get();
   }
   if (mq.min("medium")){
+  const $articleNeedMakeMoneyXY = value(
+    { x: 336, y: 708 },
+    $articleNeedMakeMoneyS.set
+  );
+  $articleNeedMakeMoney.style.display = "block";
+  $articleNeedMakeMoneyXY.get();
+  }
+  if (mq.min("large")){
   const $articleNeedMakeMoneyXY = value(
     { x: 436, y: 708 },
     $articleNeedMakeMoneyS.set
@@ -138,6 +156,14 @@ export function articleAssetsMakeMoney() {
   $articleAssetsMakeMoneyXY.get();
   }
   if (mq.min("medium")){
+  const $articleAssetsMakeMoneyXY = value(
+    { x: 80, y: 935 },
+    $articleAssetsMakeMoneyS.set
+  );
+  $articleAssetsMakeMoney.style.display = "block";
+  $articleAssetsMakeMoneyXY.get();
+  }
+  if (mq.min("large")){
   const $articleAssetsMakeMoneyXY = value(
     { x: 171, y: 935 },
     $articleAssetsMakeMoneyS.set

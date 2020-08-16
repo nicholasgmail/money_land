@@ -153,8 +153,8 @@ if (mq.inside(325, 420)) {
     { x: 109, y: 583 },
     { x: 113, y: 619 },
     { x: 113, y: 690 },
-    { x: 111, y: 726 },
-    { x: 104, y: 950 },
+    { x: 111, y: 726 , scaleX: 0.5, scaleY: 0.5},
+    { x: 104, y: 950 , scaleX: 0, scaleY: 0},
   ];
 }
 if (mq.min("medium")) {
@@ -200,7 +200,7 @@ if (mq.min("medium")) {
     { x: 285, y: 671 },
     { x: 327, y: 689 },
     { x: 386, y: 702 },
-    { x: 440, y: 722, scaleX: -(-1), scaleY: 1 },
+    { x: 440, y: 722, scaleX: -1, scaleY: 1 },
     { x: 516, y: 764, scaleX: -1, scaleY: 1 },
     { x: 501, y: 828, scaleX: -1, scaleY: 1 },
     { x: 449, y: 867, scaleX: -1, scaleY: 1 },

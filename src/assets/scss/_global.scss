@@ -136,7 +136,7 @@
    background-position: 0% 100%;
    animation: animation-hero 1s steps(6) infinite;
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
    .hero {
       display: block;
       position: absolute;
@@ -152,7 +152,7 @@
    }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
    .hero {
       display: block;
       position: absolute;
@@ -181,7 +181,7 @@
    background-position: 0% 100%;
    animation: animation-hero 1s steps(6) infinite;
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
    .knowledge-and-experience {
       display: block;
       position: absolute;
@@ -304,7 +304,7 @@
       transition: all 1s ease-in-out;
    }
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
    .knowledge-and-experience {
       display: block;
       position: absolute;

@@ -4,7 +4,7 @@ import MQ from "mq-js";
 const bp = {
   small: 320,
   smallX: 385,
-  medium: 980,
+  medium: 768,
   large: 1200
 }
  

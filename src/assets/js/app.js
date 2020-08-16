@@ -1,19 +1,20 @@
 import personMobile from "./component/mobile/persone";
-import { mq, bp } from "./component/lib/mq"; 
+import { mq, bp } from "./component/lib/mq";
 
-/* window.addEventListener('scroll', function() {
-  console.dir(document.scrollingElement)
-  var $to = document.scrollingElement.scrollTo;
-  if(  $to > 295){*/
-/*  }  
-}); */
-//старий вариант анимации easing, keyframes,
-//import { styler } from 'popmotion';
-//import { render } from 'node-sass';
+var $ticking = false;
+window.addEventListener("scroll", function (e) {
+  e.preventDefault;
+  var $scrollTop = document.scrollingElement.scrollTop;
+  // console.dir(document.scrollingElement)
+  if ($scrollTop >= 700 && !$ticking) {
+    window.requestAnimationFrame(function () {
+      personMobile();
+      $ticking = true;
+    });
+  }
+  
+});
 
-
-
-personMobile();
 
 const anchors = document.querySelectorAll("a.section-looc__scrollto");
 
@@ -29,7 +30,6 @@ for (let anchor of anchors) {
     });
   });
 }
-
 
 //const divStylerSm = styler(document.querySelector('.hero-sm'));
 //const divStylerMd = styler(document.querySelector('.hero-md'));
@@ -99,4 +99,4 @@ listen(ball, 'mousedown touchstart')
 listen(document, 'mouseup touchend')
   .start(() => {
     ballXY.stop();
-  });    */ 
+  });    */
