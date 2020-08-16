@@ -81,16 +81,16 @@
       width: 35%;
       padding-top: rem-calc(195px);
    }
-   .logo-footer{
+   .logo-footer {
       width: 40%;
    }
    .font-size_18_arial {
-   font-family: $font-family-arial;
-   font-size: rem-calc(12px);
-}
-   .font-size_24_arial{
+      font-family: $font-family-arial;
+      font-size: rem-calc(12px);
+   }
+   .font-size_24_arial {
       font-size: 1.2rem;
-   } 
+   }
 }
 @include media-breakpoint-down(sm) {
    .font-size_40_arial {
@@ -127,7 +127,7 @@
 .hero-lg {
    display: block;
    position: absolute;
-   left: 30%; 
+   left: 30%;
    z-index: 1050;
    width: rem-calc(86px);
    height: rem-calc(106px);
@@ -136,84 +136,304 @@
    background-position: 0% 100%;
    animation: animation-hero 1s steps(6) infinite;
 }
-
-//@media (max-width: 768px) { 
-.hero{
-   display: block;
-   position: absolute;
-   bottom: 92%;
-   left: 15%;
-   z-index: 1050;
-   width: rem-calc(43px);
-   height: rem-calc(54px);
-   transform: translate(-50%, -50%);
-   background-image: url(../img/hero2.png);
-   background-position: 0% 100%;
-   animation: animation-hero 1s steps(12) infinite;
-}
-.knowledge-and-experience{
-   display: block;
-   position: absolute;
-   bottom: 92%;
-   left: 15%;
-   z-index: 1030;
-   width: rem-calc(149px / 2);
-   height: rem-calc(143px / 2);
-   transform: translate(-50%, -50%);
-   background-image: url(../img/section/knowledge_and_experience.png);
-   background-position: 0% 100%;
-   background-repeat: no-repeat;
-   background-size: contain;
-}
-.see-opportunities{
-   display: block;
-   position: absolute;
-   bottom: 92%;
-   left: 15%;
-   z-index: 1030;
-   width: rem-calc(251px / 2);
-   height: rem-calc(203px / 2);
-   transform: translate(-50%, -50%);
-   background-image: url(../img/section/see_opportunities.png);
-   background-position: 0% 100%;
-   background-repeat: no-repeat;
-   background-size: contain;
-}
-
-
-
-//}
-
-
-/* @media (min-width: 370px) and (max-width: 575.98px) { 
-   .hero{
-   top: 109%;
-   left: 11%;
-}
-
-} */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-   .hero-md{
+@include media-breakpoint-down(md) {
+   .hero {
       display: block;
       position: absolute;
-      top: 48rem;
-      left: 11%;
+      bottom: 92%;
+      left: 15%;
       z-index: 1050;
-      width: rem-calc(52px);
-      height: rem-calc(75px);
-      background-image: url(../img/hero-md.png);
+      width: rem-calc(43px);
+      height: rem-calc(54px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/hero2.png);
       background-position: 0% 100%;
-      animation: animation-hero 1s steps(9) infinite;
+      animation: animation-hero 1s steps(12) infinite;
    }
 }
 
+@include media-breakpoint-up(lg) {
+   .hero {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 25%;
+      z-index: 1050;
+      width: rem-calc(86px);
+      height: rem-calc(106px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/hero.png);
+      background-position: 0% 100%;
+      animation: animation-hero 1s steps(6) infinite;
+   }
+}
+
+.hero2 {
+   display: block;
+   position: absolute;
+   bottom: 92%;
+   left: 25%;
+   z-index: 1050;
+   width: rem-calc(86px);
+   height: rem-calc(106px);
+   transform: translate(-50%, -50%);
+   background-image: url(../img/hero.png);
+   background-position: 0% 100%;
+   animation: animation-hero 1s steps(6) infinite;
+}
+@include media-breakpoint-down(md) {
+   .knowledge-and-experience {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(149px / 2);
+      height: rem-calc(143px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/knowledge_and_experience.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .bad-luck {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(110px / 2);
+      height: rem-calc(150px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/bad_luck.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .need-make-money {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(197px / 2);
+      height: rem-calc(193px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/need_make_money.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .assets-make-money {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(243px / 2);
+      height: rem-calc(99px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/assets_make_money.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+
+   .see-opportunities {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(251px / 2);
+      height: rem-calc(203px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/see_opportunities.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .make-deals {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(204px / 2);
+      height: rem-calc(204px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/make_deals.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .buy-assets {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(223px / 2);
+      height: rem-calc(223px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/buy_assets.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .passive-income {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(324px / 2);
+      height: rem-calc(179px / 2);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/passive_income.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+}
+@include media-breakpoint-up(lg) {
+   .knowledge-and-experience {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(149px);
+      height: rem-calc(143px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/knowledge_and_experience.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .bad-luck {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(110px);
+      height: rem-calc(150px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/bad_luck.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .need-make-money {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(197px);
+      height: rem-calc(193px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/need_make_money.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .assets-make-money {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(243px);
+      height: rem-calc(99px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/assets_make_money.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+
+   .see-opportunities {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(251px);
+      height: rem-calc(203px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/see_opportunities.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .make-deals {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(204px);
+      height: rem-calc(204px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/make_deals.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .buy-assets {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(223px);
+      height: rem-calc(223px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/buy_assets.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+   .passive-income {
+      display: block;
+      position: absolute;
+      bottom: 92%;
+      left: 15%;
+      z-index: 1030;
+      width: rem-calc(324px);
+      height: rem-calc(179px);
+      transform: translate(-50%, -50%);
+      background-image: url(../img/section/passive_income.png);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 1s ease-in-out;
+   }
+}
 
 @keyframes animation-hero {
    0% {
-      background-position: 0 top
+      background-position: 0 top;
    }
 
    to {
-      background-position: -480px top
+      background-position: -480px top;
    }
 }
